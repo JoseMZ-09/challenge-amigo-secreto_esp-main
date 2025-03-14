@@ -28,6 +28,18 @@ function actualizarListaAmigos () {
 
 }
 
+function sortearAmigo() {
+    if (amigos.length === 0) { //Revisa si el array esta vacio.
+        alert("No hay nombres en la lista"); //Aviso 
+        return;
+    }
+
+    let numeroAmigo = Math.floor(Math.random() * amigos.length); //Elige un número aleatorio de amigo en la variable.
+    let amigoElegido = amigos[numeroAmigo]; //Ingresa a la variale el nombre del número elegido.
+    document.getElementById("resultado").innerHTML = `El amigo secreto es: ${amigoElegido}.`; //Imprime el resultado con un mensaje. 
+
+}
+
 
 
 
